@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+     supported by Chrome and Opera */
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-image: url("http://wallpapercave.com/wp/BhcQpIw.jpg");
+  font-family: Arial, sans-serif;
+  font-stretch: condensed;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.container .game-container {
+  width: 450px;
+  height: auto;
+  flex-wrap: wrap;
+  cursor: default;
+}
+.container .game-container .game-area {
+  background-color: #333;
+  width: 100%;
+  padding-top: 100%;
+  box-shadow: 0 0 10px black;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+}
+.container .game-container .game-area .center-area {
+  width: 50%;
+  padding-top: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background-color: #333;
+  z-index: 10;
+}
+.container .game-container .game-area .center-area .center-piece {
+  width: 80%;
+  height: 80%;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #eee;
+  padding-top: 10%;
+}
+.container .game-container .game-area .center-area .center-piece .title {
+  width: 100%;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 250%;
+  font-weight: bold;
+  font-family: Caslon, serif;
+}
+.container .game-container .game-area .center-area .center-piece .title sup {
+  font-size: 40%;
+}
+.container .game-container .game-area .center-area .center-piece .center-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  position: relative;
+  padding: 0 15px;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .count-window {
+  width: 48px;
+  height: 36px;
+  background-color: #300;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #522;
+  font-size: 200%;
+  font-family: Monospace;
+}
+@media only screen and (max-width: 480px) {
+  .container .game-container .game-area .center-area .center-piece .center-row .sect .count-window {
+    width: 36px;
+    height: 27px;
+    font-size: 1.5rem;
+  }
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .window-on {
+  color: #e33;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .start-btn {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin: auto;
+  position: relative;
+  top: 15%;
+  box-shadow: 0 1px 2px black;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .start-btn:active {
+  box-shadow: 0 0;
+  transform: translateY(1px);
+}
+@media only screen and (max-width: 480px) {
+  .container .game-container .game-area .center-area .center-piece .center-row .sect .start-btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .strict-btn {
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin: auto;
+  position: relative;
+  top: 15%;
+  box-shadow: 0 1px 2px black;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .strict-btn:active {
+  box-shadow: 0 0;
+  transform: translateY(1px);
+}
+@media only screen and (max-width: 480px) {
+  .container .game-container .game-area .center-area .center-piece .center-row .sect .strict-btn {
+    width: 20px;
+    height: 20px;
+  }
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .strict-light {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  border: 5px solid #333;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: -5px;
+  left: 50%;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .light-on {
+  border-width: 2px;
+}
+.container .game-container .game-area .center-area .center-piece .center-row .sect .desc {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 70%;
+}
+.container .game-container .game-area .center-area .center-piece .switch-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  margin-top: 5px;
+  position: relative;
+  font-size: 70%;
+}
+.container .game-container .game-area .center-area .center-piece .switch-row .switch-area {
+  width: 40px;
+  height: 20px;
+  background-color: #333;
+  margin: 0 3px;
+  position: relative;
+}
+@media only screen and (max-width: 480px) {
+  .container .game-container .game-area .center-area .center-piece .switch-row .switch-area {
+    width: 30px;
+    height: 15px;
+  }
+}
+.container .game-container .game-area .center-area .center-piece .switch-row .switch-area .power-switch {
+  width: 50%;
+  height: 100%;
+  border: 2px solid #333;
+  background-color: #5cf;
+  position: absolute;
+}
+.container .game-container .game-area .center-area .center-piece .switch-row .switch-area .on {
+  right: 0;
+}
+.container .game-container .game-area .btn-1 {
+  width: 45%;
+  padding-top: 45%;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: green;
+}
+.container .game-container .game-area .btn-1-on {
+  background-color: #44c444;
+}
+.container .game-container .game-area .btn-2 {
+  width: 45%;
+  padding-top: 45%;
+  border-radius: 0 100% 0 0;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #cc0000;
+}
+.container .game-container .game-area .btn-2-on {
+  background-color: #ff4444;
+}
+.container .game-container .game-area .btn-4 {
+  width: 45%;
+  padding-top: 45%;
+  border-radius: 0 0 0 100%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  background-color: #cccc00;
+}
+.container .game-container .game-area .btn-4-on {
+  background-color: #ffff44;
+}
+.container .game-container .game-area .btn-3 {
+  width: 45%;
+  padding-top: 45%;
+  border-radius: 0 0 100% 0;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: #0000cc;
+}
+.container .game-container .game-area .btn-3-on {
+  background-color: #4444ff;
+}
+.container .game-container .game-area .ver-div {
+  width: 5%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  margin-left: -2.5%;
+  background-color: #333;
+}
+.container .game-container .game-area .hor-div {
+  width: 90%;
+  height: 5%;
+  position: absolute;
+  top: 50%;
+  margin-top: -2.5%;
+  left: 5%;
+  background-color: #333;
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  html {
+    font-size: 12px;
+  }
+}

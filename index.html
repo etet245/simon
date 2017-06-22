@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div class="game-container">
+    <div class="game-area">
+      <div class="center-area">
+        <div class="center-piece">
+          <div class="title">Simon<sup>&reg;</sup></div>
+          <div class="center-row">
+            <div class="sect">
+              <div class="count-window" id="count-window">--</div>
+              <div class="desc">COUNT</div>
+            </div>
+            <div class="sect">
+              <div class="start-btn clickable" id="start-btn"></div>
+              <div class="desc">START</div>
+            </div>
+            <div class="sect">
+              <div class="strict-light" id="strict-light"></div>
+              <div class="strict-btn clickable" id="strict-btn"></div>
+              <div class="desc">STRICT</div>
+            </div>
+          </div>
+          <div class="switch-row">
+            OFF
+            <div id="switch" class="switch-area clickable">
+              <div class="power-switch"></div>
+            </div>
+            ON
+          </div>
+        </div>
+      </div>
+      <div class="btn-1" id="1"></div>
+      <div class="btn-2" id="2"></div>
+      <div class="btn-3" id="3"></div>
+      <div class="btn-4" id="4"></div>
+      <div class="ver-div"></div>
+      <div class="hor-div"></div>
+    </div>
+  </div>
+</div>
+
+<audio id="sound1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+<audio id="sound2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+<audio id="sound3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+<audio id="sound4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
