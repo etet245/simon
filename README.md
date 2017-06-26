@@ -6,4 +6,4 @@ This was an exercise for me to really get down into the details of emulating a d
 
 | Example Simon app from freeCodeCamp                                                   | My Simon app                                |
 | ------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [![Example Simon app](example-simon-app.png)](https://codepen.io/Em-Ant/full/QbRyqq/) | [![My Simon app](Optimized-simon-pic.png)](etet245.github.io/simon) |
+| [![Example Simon app](example-simon-app.png)](https://codepen.io/Em-Ant/full/QbRyqq/) | [![My Simon app](simon-pic.png)](etet245.github.io/simon) |
